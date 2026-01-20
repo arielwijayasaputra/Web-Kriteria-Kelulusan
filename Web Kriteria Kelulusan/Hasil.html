@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Laporan Nilai</title>
+</head>
+
+<body>
+
+    <h2 align="center">HASIL LAPORAN NILAI</h2>
+
+    <fieldset align="center" style="width: 300px; margin: auto;">
+        <legend>Data Siswa</legend>
+
+        <p>Nama : <span id="nama"></span></p>
+        <p>NISN : <span id="nisn"></span></p>
+
+        <hr>
+
+        <p>Bahasa Indonesia : <span id="indo"></span></p>
+        <p>Bahasa Inggris : <span id="inggris"></span></p>
+        <p>Matematika : <span id="mtk"></span></p>
+        <p>IPAS : <span id="ipas"></span></p>
+        <p>Dasar Kompetensi : <span id="dk"></span></p>
+
+        <hr>
+
+        <p>Rata-rata : <span id="rata"></span></p>
+        <p>Status : <strong><span id="status"></span></strong></p>
+        <p>Alasan : <span id="alasan"></span></p>
+
+
+        <p>
+            <button onclick="window.history.back();">Kembali</button>
+        </p>
+
+    </fieldset>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("nama").textContent = params.get("nama");
+        document.getElementById("nisn").textContent = params.get("nisn");
+        document.getElementById("indo").textContent = params.get("indo");
+        document.getElementById("inggris").textContent = params.get("inggris");
+        document.getElementById("mtk").textContent = params.get("mtk");
+        document.getElementById("ipas").textContent = params.get("ipas");
+        document.getElementById("dk").textContent = params.get("dk");
+        document.getElementById("rata").textContent = params.get("rata");
+        document.getElementById("status").textContent = params.get("status");
+        document.getElementById("alasan").textContent = params.get("alasan");
+
+    </script>
+
+</body>
+
+</html>

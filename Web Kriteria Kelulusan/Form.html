@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kriteria Kelulusan</title>
+</head>
+
+<body>
+
+    <h2 align="center">Kriteria Lulus</h2>
+
+    <form action="Proses.php" method="POST">
+
+        <fieldset align="center" style="width: 300px; margin: auto;">
+            <legend>Nilai Siswa</legend>
+
+            <p>
+                Nama : <br>
+                <input type="text" name="nama" required>
+            </p>
+
+            <p>
+                NISN : <br>
+                <input type="text" name="nisn" maxlength="10" required>
+            </p>
+
+            <p>
+                Bahasa Indonesia : <br>
+                <input type="number" name="indo" required>
+            </p>
+
+            <p>
+                Bahasa Inggris : <br>
+                <input type="number" name="inggris" required>
+            </p>
+
+            <p>
+                Matematika : <br>
+                <input type="number" name="mtk" required>
+            </p>
+
+            <p>
+                IPAS : <br>
+                <input type="number" name="ipas" required>
+            </p>
+
+            <p>
+                Dasar Kompetensi : <br>
+                <input type="number" name="dk" required>
+            </p>
+
+            <p>
+                <button type="submit">Proses</button>
+            </p>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
